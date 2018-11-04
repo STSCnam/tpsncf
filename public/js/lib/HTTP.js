@@ -1,14 +1,48 @@
 'use strict'
 
 export class HTTP {
+    /**
+     * The get request method
+     * 
+     * @param {string} url An url to request
+     * @param {function} handler A callback function to process the request response
+     * @param {object} opts An object of requests parameters
+     *      @param {object} headers An oject of HTTP headers
+     *      @param {string|object} body  A data to send
+     * 
+     * @return {void}
+     */
     static get(url, handler, opts = {}) {
         HTTP.request('GET', url, opts, handler);
     }
 
+     /**
+     * The get request method
+     * 
+     * @param {string} url An url to requesting
+     * @param {function} handler A callback function to process the request response
+     * @param {object} opts An object of requests parameters
+     *      @param {object} headers An oject of HTTP headers
+     *      @param {string|object} body  A data to send
+     * 
+     * @return {void}
+     */
     static post(url, handler, opts = {}) {
         HTTP.request('POST', url, opts, handler);
     }
 
+    /**
+     * The AJAX request sender
+     * 
+     * @param {string} method An HTTP method 
+     * @param {string} url An url to request
+     * @param {object} opts An object of requests parameters
+     *      @param {object} headers An oject of HTTP headers
+     *      @param {string|object} body  A data to send
+     * @param {function} handler A callback function to process the request response
+     * 
+     * @return {void}
+     */
     static request(method, url, opts, handler) {
         let xhr = new XMLHttpRequest();
 
