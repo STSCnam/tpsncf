@@ -1,0 +1,5 @@
+# Composer modules
+/vendor
+
+# Project config
+/env.json

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-family: 'Quicksand', sans-serif;
+
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background: rgb(28, 31, 35);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(31, 210, 219);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+
+    padding: 50px;
+}
+
+.box:nth-of-type(1) {
+    box-shadow: -1px 1px 2px rgba(255, 255, 255, 0.02) inset;
+}
+
+.box:nth-last-of-type(1) {
+    border-left: 1px solid rgba(255, 255, 255, 0.02);
+    box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.box select {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.box select option {
+    color: #222;
+}
+
+.box .formations .radio-box {
+    margin-bottom: 5px;
+}
+
+.box .formations .radio-box input {
+    margin-right: 5px;
+}
+
+.box .formations .radio-box input,
+.box .formations .radio-box label {
+    cursor: pointer;
+}
+
+table.table {
+    text-align: left;
+}
+
+table.table th,
+table.table td {
+    padding: 0 5px 0 5px;
+}
+
+table.table td {
+    color: #ffffff88;
+}
+
+table.table td input[type="checkbox"] {
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 5px;
+
+    background: rgb(14, 15, 19);
+}
