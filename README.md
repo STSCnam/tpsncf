@@ -5,6 +5,7 @@ TP réalisé dans le cadre d'une formation ...
 ## Nécessite
 
 - PHP >= 7.2
+- composer >= 1.6.*
 
 ## Guide de déploiement
 

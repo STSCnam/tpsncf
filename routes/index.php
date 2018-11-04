@@ -9,6 +9,11 @@ $router = new Router();
 
 /**
  * Root route processing
+ * 
+ * This route will retrieve all activities in the database,
+ * then send the result to the renderer
+ * 
+ * [render] html The index page
  */
 $router->get('/', function($req, $res) use ($env) {
     $cnx = new Connector($env->database);
@@ -22,7 +27,9 @@ $router->get('/', function($req, $res) use ($env) {
 
 /**
  * Route processing /formations/:num
- * This route will retrieve the formations from the database and return the result
+ * 
+ * This route will retrieve the formations 
+ * from the database and return the result
  * 
  * [param] :num An activity code
  * 
@@ -44,7 +51,9 @@ $router->get('/formations/:num', function($req, $res) use ($env) {
 
 /**
  * Route processing /registered/:code
- * This route will retrieve the agents registered to the formation passed in the url parameter
+ * 
+ * This route will retrieve the agents registered 
+ * to the formation passed in the url parameter
  * 
  * [param] :code A formation code
  * 
